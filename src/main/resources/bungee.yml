@@ -1,0 +1,4 @@
+name: meins_proxy
+version: '${project.version}'
+main: de.ender.meins_proxy.Main
+author: ender__exe
