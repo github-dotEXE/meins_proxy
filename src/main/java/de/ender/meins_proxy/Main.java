@@ -23,7 +23,6 @@ public final class Main extends Plugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
     public static ProxyServer proxy(){
         return proxy;

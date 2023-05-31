@@ -11,15 +11,15 @@ import net.md_5.bungee.event.EventHandler;
 public class JoinLeaveListener implements Listener {
     @EventHandler
     public void onJoin(PostLoginEvent event) {
-        ProxyServer.getInstance().broadcast(
-                new TextComponent("["+ChatColor.GREEN+"+"+ChatColor.WHITE+ "] "+event.getPlayer().getName())
-        );
+        String msg = "["+ChatColor.GREEN+"+"+ChatColor.WHITE+ "] "+event.getPlayer().getName();
+
+        ProxyServer.getInstance().broadcast(new TextComponent(msg));
     }
 
     @EventHandler
     public void onLeave(PlayerDisconnectEvent event) {
-        ProxyServer.getInstance().broadcast(
-                new TextComponent("["+ChatColor.RED+"-"+ChatColor.WHITE+ "] "+event.getPlayer().getName())
-        );
+        String msg ="["+ChatColor.RED+"-"+ChatColor.WHITE+ "] "+event.getPlayer().getName();
+
+        ProxyServer.getInstance().broadcast(new TextComponent(msg));
     }
 }

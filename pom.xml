@@ -6,7 +6,7 @@
 
     <groupId>de.ender</groupId>
     <artifactId>proxy</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>meins_proxy</name>
@@ -37,6 +37,13 @@
         </resources>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>de.ender-releases</id>
+            <url>http://exe.ddns.net:8081/releases</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>sonatype</id>
@@ -54,7 +61,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.19.3-R0.1-SNAPSHOT</version>
+            <version>1.19.4-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
